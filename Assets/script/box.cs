@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class box : MonoBehaviour
 {
+    public GameObject Box;
+
+
     float currtime;
     // Start is called before the first frame update
     void Start()
@@ -19,11 +22,16 @@ public class box : MonoBehaviour
 
 
         currtime += Time.deltaTime;
-        if (currtime > 2)
+        if (currtime > 1)
         {
+            
+            GameObject newbox = Instantiate(Box);
             float newX = Random.Range(-4.5f, 4.5f);
-            Instantiate(gameObject);
-            gameObject.transform.position = new Vector3(newX, 8, 0);
+            newbox.transform.position = new Vector3(newX, 8, 0);
+            
+            
+            
+            
 
             currtime = 0;
 
