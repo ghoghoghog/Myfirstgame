@@ -16,41 +16,16 @@ public class box : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-
-
-
-
         currtime += Time.deltaTime;
-        if (currtime > 1)
+        if (currtime > 0.6)
         {
             
             GameObject newbox = Instantiate(Box);
             float newX = Random.Range(-4.5f, 4.5f);
             newbox.transform.position = new Vector3(newX, 8, 0);
-            
-            
-            
-            
-
             currtime = 0;
 
-
-
-
-
-
         }
-
-
-
-
-
-
-
-
-
-
 
     }
    
