@@ -12,13 +12,14 @@ public class archer : MonoBehaviour
     public KeyCode shootingkey;
     private AudioSource Play;
     Rigidbody2D rb;
-
+    public AudioSource audioSource;
     public AudioClip shoot;
     
     void Start()
     {
         Play= GetComponent<AudioSource>();
         rb = GetComponent<Rigidbody2D>();
+        audioSource.clip = shoot;
     }
 
     private void Awake()
@@ -38,6 +39,7 @@ public class archer : MonoBehaviour
                 GameObject arrowCloneobj = Instantiate(arrowobject);
                 time = 0;
                 arrowCloneobj.transform.position = shootpds.position;
+                audioSource.Play();
                 animator.SetTrigger("space");
                 
             }
