@@ -2108,6 +2108,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scrollbar: {fileID: 1761839225}
   timedown: 1
+  slider: {fileID: 169185429}
 --- !u!1 &1919668936
 GameObject:
   m_ObjectHideFlags: 0

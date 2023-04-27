@@ -23,6 +23,10 @@ public class score : MonoBehaviour
             Debug.Log("myScore : " + score2.Instance.myScore);
         }
 
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            Destroy(obj:gameObject);
+        }
         
     }
 }
