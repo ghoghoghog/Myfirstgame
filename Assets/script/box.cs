@@ -16,6 +16,7 @@ public class box : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+            
         currtime += Time.deltaTime;
         if (currtime > 0.6)
         {
